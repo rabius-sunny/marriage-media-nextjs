@@ -1,0 +1,87 @@
+.inputs {
+  form {
+    background-image: url('/images/formbg.png');
+    background-repeat: no-repeat;
+    padding: 10px 20px;
+    background-size: cover;
+    border-radius: 20px;
+
+    h1 {
+      text-align: center;
+      color: $secondary;
+      font-weight: 400;
+      font-size: 2.5rem;
+    }
+
+    label {
+      display: block;
+      color: $secondary;
+      padding-left: 10px;
+      font-size: 1.2rem;
+    }
+
+    input {
+      border: 2px solid $primary;
+      padding: 10px;
+      width: 100%;
+      border-radius: 8px;
+      font-size: 1rem;
+      margin-bottom: 15px;
+      background: transparent;
+      color: $primary__hover;
+    }
+    input::placeholder {
+      color: $primary__hover;
+      opacity: 0.5;
+    }
+
+    .check {
+      label {
+        display: inline;
+        color: $gray;
+      }
+
+      input {
+        width: auto;
+        margin-left: 10px;
+      }
+
+      input[type="checkbox"]:checked {
+        background-color: slategray;
+      }
+
+      .checkmark {
+        background-color: red;
+      }
+    }
+
+    a {
+      color: $gray;
+      font-size: 1.2rem;
+    }
+
+    p.center {
+      font-weight: 500;
+    }
+
+    .googleLogin {
+      padding: 10px 0;
+
+      span {
+        width: 50%;
+        border: 1px solid $gray;
+        padding: 8px 12px;
+        border-radius: 20px;
+        color: $secondary;
+      }
+    }
+    .signup {
+      color: $gray;
+      font-size: 1.2rem;
+      a {
+        color: $primary;
+        text-decoration: underline;
+      }
+    }
+  }
+}
